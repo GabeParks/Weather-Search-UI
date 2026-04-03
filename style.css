@@ -60,7 +60,7 @@ button:hover {
   border: 10px solid #ddd;
   border-radius: 20px;
   padding: 1rem;
-  background-color: #495B85;
+  background-color: #8CB2B8;
 }
 
 .card h3 {
@@ -76,5 +76,5 @@ button:hover {
 .forecast-list li {
   padding: 5px 0;
   border-bottom: 1px solid #ddd;
-  color: #8CB2B8;
+  color: #495B85;
 }
