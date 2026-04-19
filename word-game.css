@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    text-align: center;
+}
+
+.instructions {
+    margin-bottom: 20px;
+    color: cyan;
+}
+
+/* CSS Grid for the 6x5 board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+/* Individual letter boxes */
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d3d6da;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+/* Feedback Colors */
+.correct {
+    background-color: navy; /* Green */
+    color: orange;
+    border-color: orange;
+}
+
+.present {
+    background-color: orange; /* Yellow */
+    color: white;
+    border-color: yellow;
+}
+
+.absent {
+    background-color: white; /* Gray */
+    color: orange;
+    border-color: red;
+}
+
+/* Status message and button */
+#status-message {
+    height: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#restart-btn {
+    padding: 10px 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: navy;
+    color: orange;
+    border: none;
+    border-radius: 4px;
+    display: none; /* Hidden until the game ends */
+}
+
+#restart-btn:hover {
+    background-color: white;
+    color: orange;
+}
